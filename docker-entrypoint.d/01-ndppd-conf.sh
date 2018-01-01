@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-# check environment varialbe INTERFACE
+# check environment variable INTERFACE
 if [ -z "${INTERFACE}" ]; then
     echo "Environment variable INTERFACE should be in format 'eth0'"
     exit 1
