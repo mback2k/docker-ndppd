@@ -8,7 +8,8 @@ RUN apt-get update && \
         supervisor && \
     apt-get clean
 
-ADD ndppd.conf /etc/ndppd/ndppd.conf
+RUN mkdir /etc/ndppd
+RUN touch /etc/ndppd/ndppd.conf
 
 ADD docker-entrypoint.d/ /run/docker-entrypoint.d/
 
