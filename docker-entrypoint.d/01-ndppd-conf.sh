@@ -14,3 +14,5 @@ if [ -z "${IP6RANGE}" ]; then
 fi
 
 echo "proxy ${INTERFACE} { rule ${IP6RANGE} { auto } }" > /etc/ndppd.conf
+
+exit 0
